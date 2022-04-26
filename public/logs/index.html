@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Document</title>
+
+    <!-- this is the leaflet code -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+    <style>
+        #map {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Weather Here</h1>
+    <p>
+        <a href="../index.html">check-in</a>&nbsp|&nbsp<a href="/logs">view check-ins</a>
+    </p>
+    <img src="../images/0379fb22-6fc5-49cc-84b8-24509ddc959b.webp" height="100px" width="100px" />
+    <p>Oh, hi! Hello there!</p><br>
+
+
+    <div id="map"></div>
+    <script src="logs.js"></script>
+</body>
+
+</html>
