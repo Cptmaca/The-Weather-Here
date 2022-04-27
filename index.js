@@ -1,12 +1,15 @@
 const express = require('express');
 const Datastore = require('nedb');
 const fetch = require('node-fetch');
+
+//dotenv for you environment variable
 require('dotenv').config();
 console.log(process.env);
 
 const { formatWithOptions } = require('util');
 const app = express();
-app.listen(3002, () => console.log('listening on port 3002!'));
+const port = process.env.PORT || 3002;
+app.listen(port, () => console.log(`listening on port ${port}!`));
 
 app.use(express.static('public')); //this defines the place where the server will look for files to serve
 app.use(express.json({ limit: '1mb' })); // this allows the server to parse incoming data as json
